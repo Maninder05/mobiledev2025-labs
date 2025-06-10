@@ -8,7 +8,7 @@ type Props = {
 
 export default function Increment({ count, setCount }: Props) {
   return (
-    <View style={{ marginVertical: 10 }}>
+    <View style={{marginVertical: 10 }}>
       <Button title="Increment" onPress={() => setCount(count + 1)} />
     </View>
   );
