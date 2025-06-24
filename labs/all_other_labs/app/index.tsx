@@ -1,4 +1,4 @@
-import { View, Text, Pressable, StyleSheet} from 'react-native';
+import { View, Text, Pressable, StyleSheet, Button} from 'react-native';
 import FruitList from '../components/FruitList';
 import { useRouter } from 'expo-router';
 
@@ -6,11 +6,15 @@ export default function Home() {
   const router = useRouter();
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{fontSize:18, fontWeight:"bold" }}>Welcome to the Lab 2 Programmers!!</Text>
+      <Text style={{fontSize:18, fontWeight:"bold" }}>Welcome to the Lab 2!</Text>
       <FruitList/>
-      <Text style={styles.title}>Welcome to Lab 3!!</Text>
+      <Text style={{fontSize:18, fontWeight:"bold" }}>Welcome to the Lab 3!</Text>
       <Pressable style={styles.btn} onPress={() => router.push('/lab3')}>
         <Text style={styles.btnText}>Go To LAB 3</Text>
+      </Pressable>
+      <Text style={{fontSize:18, fontWeight:"bold" }}>Welcome to the Lab 4!</Text>
+      <Pressable style={styles.btn} onPress={() => router.push('/lab4')}>
+        <Text style={styles.btnText}>Go To LAB 4</Text>
       </Pressable>
     </View>
   );
