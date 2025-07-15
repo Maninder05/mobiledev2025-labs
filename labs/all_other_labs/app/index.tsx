@@ -16,6 +16,10 @@ export default function Home() {
       <Pressable style={styles.btn} onPress={() => router.push('/lab4')}>
         <Text style={styles.btnText}>Go To LAB 4</Text>
       </Pressable>
+        <Text style={{fontSize:18, fontWeight:"bold" }}>Welcome to the Lab 5!</Text>
+      <Pressable style={styles.btn} onPress={() => router.push('/lab5')}>
+        <Text style={styles.btnText}>Go To LAB 5</Text>
+      </Pressable>
     </View>
   );
 }
